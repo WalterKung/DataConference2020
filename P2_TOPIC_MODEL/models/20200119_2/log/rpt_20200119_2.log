@@ -1,0 +1,291 @@
+Model Parameters 
+++++++++++++++++ 
+Name: 20200119_2
+Data Source: news_content
+num of topics: 50
+num of vocabs: 7878
+clientVocabWT: 5
+isTf: True
+isIDF: True
+num of hidden size: 800
+theta_act: relu
+rho_size: 300
+min_term_freq: 40
+max_term_potion: 0.4
+min_doc_length: 200
+skipCycle: 200
+shrink_idv: 0.98
+shrink_lg: 0.35
+Model Architecture 
+++++++++++++++++++ 
+ETM(
+  (t_drop): Dropout(p=0.6)
+  (theta_act): ReLU()
+  (rho): Linear(in_features=300, out_features=7878, bias=False)
+  (alphas): Linear(in_features=300, out_features=50, bias=False)
+  (q_theta): Sequential(
+    (0): Linear(in_features=7878, out_features=800, bias=True)
+    (1): ReLU()
+    (2): Linear(in_features=800, out_features=800, bias=True)
+    (3): ReLU()
+  )
+  (mu_q_theta): Linear(in_features=800, out_features=50, bias=True)
+  (logsigma_q_theta): Linear(in_features=800, out_features=50, bias=True)
+)
+Topic Keywords 
+++++++++++++++ 
+Topic_0, n:1, >>: content,report,third,service,press,research,analyst,author,td,newsletters,prepared,publicly,consists,get,way,download,unless,effort,noted
+Topic_1, n:71, >>: earnings,stocks,report,free,estimate,price,zacks,last,strong,research,get,recommendations,latest,rank,next,current,download,estimates,investors
+Topic_2, n:35, >>: net,income,ended,period,loss,adjusted,operating,margin,earnings,cash,share,gross,items,tax,revenue,periods,non,reported,six
+Topic_3, n:1, >>: two,portfolio,properties,strategy,canadian,developing,corp,addition,long,continues,combined,goal,acquiring,years,projects,materially,american,assets,fiscal
+Topic_4, n:17, >>: cash,continue,operating,demand,continuing,fleet,flow,lease,inventory,term,costs,approximately,position,balance,sheet,investors,believe,continued,remain
+Topic_5, n:89, >>: call,conference,website,quarter,et,second,access,investors,participate,approximately,original,webcast,free,executive,earnings,please,replay,international,close
+Topic_6, n:16, >>: production,half,increase,ore,second,due,approximately,mine,expect,increased,grade,operating,gold,plant,costs,expected,higher,next,ounces
+Topic_7, n:26, >>: shareholders,annual,directors,meeting,follows,original,set,website,listed,announced,common,corporation,held,next,votes,received,sedar,board,june
+Topic_8, n:4, >>: us,rate,interest,end,plus,term,de,june,december,approximately,rates,agreement,annual,result,make,look,note,november,reported
+Topic_9, n:8, >>: energy,construction,partners,pipeline,building,project,partnership,customers,power,projects,approximately,residential,fuel,north,businesses,infrastructure,investors,utility,generation
+Topic_10, n:6, >>: growth,see,stocks,line,growing,driven,long,businesses,lead,acquisitions,economy,range,organic,digit,improving,remain,likely,expansion,opportunities
+Topic_11, n:29, >>: customers,design,manufacturing,supply,customer,stores,service,superior,leading,parts,product,retail,store,network,located,sales,leader,operates,distribution
+Topic_12, n:1, >>: development,materially,focused,received,set,additional,currently,funding,significant,includes,number,form,activities,important,operational,fully,process,work,efforts
+Topic_13, n:27, >>: said,would,could,according,last,big,earlier,much,firm,says,small,banks,set,two,reuters,part,reporting,reported,investors
+Topic_14, n:5, >>: value,impact,credit,debt,level,strategic,lower,sales,right,term,look,facility,recent,good,increase,expect,transaction,grade,price
+Topic_15, n:2, >>: operations,made,high,related,within,expect,acquired,plan,order,used,update,technologies,america,de,build,events,follows,trademarks,resource
+Topic_16, n:2, >>: announced,facilities,systems,support,corporation,six,joint,transportation,build,provide,ensure,located,united,healthcare,approximately,date,center,commercial,facility
+Topic_17, n:18, >>: per,share,dividend,shareholders,date,cents,increase,record,common,dividends,quarterly,yield,declared,earnings,march,april,month,fourth,since
+Topic_18, n:1, >>: three,months,listed,contact,register,averages,vancouver,wall,engages,street,month,higher,past,media,report,march,mineral,system,maintenance
+Topic_19, n:1, >>: performance,expected,potential,terms,website,foreign,subject,acquisition,expects,opportunities,rates,currency,identified,future,materials,expectations,projected,reflect,section
+Topic_20, n:3, >>: capital,price,private,sold,close,working,total,used,ontario,units,closing,led,placement,firm,preferred,wealth,benefit,july,announce
+Topic_21, n:15, >>: use,provides,registered,without,notice,produces,sponsored,pro,basis,change,offering,used,direct,releases,represented,accuracy,included,written,sell
+Topic_22, n:23, >>: fund,class,funds,investors,firm,action,contact,period,rights,would,lead,materially,statements,member,news,acquired,shareholders,according,made
+Topic_23, n:25, >>: drilling,gold,grade,resource,deposit,high,project,located,drill,potential,approximately,zone,program,estimate,mine,see,reported,exploration,date
+Topic_24, n:79, >>: reviewed,reports,reviewer,contained,document,according,procedures,us,aws,covering,articles,loss,non,party,necessary,herein,outside,nyse,independent
+Topic_25, n:11, >>: assets,income,tax,distribution,equity,return,paid,net,distributions,payment,date,monthly,shareholders,amounts,short,asset,total,investments,fiscal
+Topic_26, n:0, >>: current,future,actual,differ,historical,estimate,meaning,uncertainty,applicable,difficult,filings,regulatory,anticipates,regarding,commission,fact,discussion,various,certain
+Topic_27, n:18, >>: group,bank,real,estate,banking,mortgage,home,retail,residential,housing,assets,trust,across,commercial,loan,banks,top,businesses,firm
+Topic_28, n:5, >>: events,economic,anticipated,ability,contained,changes,benefits,conditions,annual,risk,date,known,foreign,general,identified,timing,regulatory,terms,among
+Topic_29, n:19, >>: health,care,clinical,healthcare,technology,drug,programs,product,data,developing,research,potential,medical,patients,center,treatment,lead,small,education
+Topic_30, n:21, >>: percent,gold,group,energy,points,data,composite,said,oil,index,higher,tsx,bank,name,corp,prices,lower,sector,ltd
+Topic_31, n:23, >>: offer,amended,act,would,press,united,states,offering,due,terms,made,purchase,sale,proceeds,notes,short,solicitation,state,registered
+Topic_32, n:1, >>: news,limited,access,key,corporate,https,following,ontario,data,please,range,review,many,general,us,would,low,exposure,construction
+Topic_33, n:18, >>: executive,experience,years,president,officer,chief,board,mr,role,strategic,member,look,holds,said,welcome,vice,team,leader,ceo
+Topic_34, n:75, >>: day,moving,volume,research,produces,reports,ended,lower,last,latest,get,activewallst,headquartered,registered,symbol,corp,recorded,pro,session
+Topic_35, n:40, >>: data,technology,customers,customer,leading,across,network,digital,world,service,said,product,experience,innovation,media,communications,leader,services,networks
+Topic_36, n:1, >>: billion,international,years,part,major,strong,make,sector,top,around,america,american,already,become,five,six,mexico,continued,assets
+Topic_37, n:13, >>: services,clients,provider,insurance,across,wealth,leading,businesses,retirement,firm,service,employee,health,technology,solutions,integrated,provides,benefits,original
+Topic_38, n:198, >>: looking,statements,factors,risks,uncertainties,expectations,cause,could,assumptions,estimates,future,words,press,expect,date,except,without,limited,certain
+Topic_39, n:2, >>: first,cost,equipment,approximately,land,measure,close,maintenance,prime,product,unit,full,continued,top,across,sales,low,begin,result
+Topic_40, n:52, >>: gold,project,mining,mine,mineral,copper,resource,located,uranium,exploration,resources,deposits,deposit,report,projects,grade,silver,royalty,estimates
+Topic_41, n:3, >>: average,trading,ratio,previous,free,higher,sponsored,greater,past,tsx,total,ltd,pe,month,non,nyse,composite,equities,register
+Topic_42, n:81, >>: quarter,compared,sales,revenue,revenues,increase,increased,second,fiscal,reported,due,fourth,earnings,higher,lower,last,adjusted,profit,gross
+Topic_43, n:30, >>: common,issued,purchase,date,price,period,approximately,share,connection,acquire,terms,loan,purchases,outstanding,acquired,gross,tsx,subject,pursuant
+Topic_44, n:47, >>: oil,gas,natural,production,drilling,petroleum,exploration,rig,prices,wells,calgary,royalty,crude,alberta,report,resources,western,reserves,rigs
+Topic_45, n:8, >>: food,products,specialty,home,leading,manufacturing,packaging,approximately,product,original,steel,manufacturer,across,integrated,paper,located,manufactures,sales,customers
+Topic_46, n:32, >>: fund,investors,sector,stocks,top,etf,exposure,small,funds,short,etfs,according,charges,next,could,equity,assets,index,look
+Topic_47, n:4, >>: owns,operates,communities,community,july,capacity,coal,building,generation,sustainable,current,service,producer,independent,central,next,act,environmental,said
+Topic_48, n:35, >>: think,going,would,research,like,good,operator,back,question,get,next,look,bit,right,see,really,last,much,little
+Topic_49, n:4, >>: global,companies,world,largest,leading,markets,leader,visit,products,china,asia,europe,countries,innovative,provide,announced,commitment,ceo,water
+Models variable 
++++++++++++++++ 
+                rho
+count  2.363400e+06
+mean   3.459118e-03
+std    5.779263e-01
+min   -5.372880e+00
+1%    -1.563844e+00
+10%   -6.645012e-01
+25%   -3.329818e-01
+50%   -1.333946e-03
+75%    3.500797e-01
+90%    6.735910e-01
+99%    1.518668e+00
+max    5.264064e+00
+--------------------------- 
+             alphas
+count  15000.000000
+mean       0.002489
+std        0.603111
+min       -2.825182
+1%        -1.418212
+10%       -0.743134
+25%       -0.423891
+50%        0.007862
+75%        0.425276
+90%        0.733805
+99%        1.431996
+max        3.076010
+--------------------------- 
+          q_theta_0
+count  6.302400e+06
+mean   2.792623e-04
+std    1.277650e-02
+min   -8.816659e-01
+1%    -7.283437e-03
+10%   -5.206889e-40
+25%   -4.892115e-40
+50%   -4.158087e-40
+75%    3.798976e-40
+90%    5.128878e-40
+99%    1.420681e-02
+max    1.009613e+00
+--------------------------- 
+        q_theta_0_b
+count  8.000000e+02
+mean  -2.962418e-02
+std    1.589134e-01
+min   -9.332209e-01
+1%    -7.008571e-01
+10%   -4.881990e-02
+25%   -5.145235e-40
+50%   -4.827971e-40
+75%   -4.215018e-40
+90%   -3.687657e-40
+99%    3.276961e-01
+max    8.884722e-01
+--------------------------- 
+        q_theta_0_b
+count  8.000000e+02
+mean  -2.962418e-02
+std    1.589134e-01
+min   -9.332209e-01
+1%    -7.008571e-01
+10%   -4.881990e-02
+25%   -5.145235e-40
+50%   -4.827971e-40
+75%   -4.215018e-40
+90%   -3.687657e-40
+99%    3.276961e-01
+max    8.884722e-01
+--------------------------- 
+          q_theta_2
+count  6.400000e+05
+mean  -1.273233e-04
+std    2.219270e-02
+min   -1.204223e+00
+1%    -5.443447e-02
+10%   -5.073753e-40
+25%   -4.655818e-40
+50%   -3.839235e-40
+75%    4.147521e-40
+90%    4.958551e-40
+99%    5.349849e-02
+max    1.031619e+00
+--------------------------- 
+        q_theta_2_b
+count  8.000000e+02
+mean   4.296418e-02
+std    1.252234e-01
+min   -3.409945e-01
+1%    -1.997907e-01
+10%   -5.202842e-40
+25%   -4.888016e-40
+50%   -4.193981e-40
+75%    4.613253e-40
+90%    2.223367e-01
+99%    4.723925e-01
+max    8.260004e-01
+--------------------------- 
+         mu_q_theta
+count  4.000000e+04
+mean   4.210283e-04
+std    5.351112e-02
+min   -1.477471e+00
+1%    -1.244395e-01
+10%   -2.305876e-02
+25%   -4.881024e-40
+50%   -3.502784e-40
+75%    4.769501e-40
+90%    1.775073e-02
+99%    1.382058e-01
+max    1.312737e+00
+--------------------------- 
+       mu_q_theta_b
+count     50.000000
+mean      -0.055693
+std        0.196279
+min       -0.534182
+1%        -0.482049
+10%       -0.376098
+25%       -0.148958
+50%       -0.021429
+75%        0.068931
+90%        0.111971
+99%        0.318982
+max        0.325992
+--------------------------- 
+       logsigma_q_theta
+count      4.000000e+04
+mean       1.688762e-04
+std        3.258456e-03
+min       -3.172382e-02
+1%        -1.033264e-02
+10%       -1.587367e-03
+25%       -4.725515e-40
+50%        3.492001e-40
+75%        4.885956e-40
+90%        2.561514e-03
+99%        1.215600e-02
+max        3.058520e-02
+--------------------------- 
+       logsigma_q_theta_b
+count           50.000000
+mean            -0.032087
+std              0.072450
+min             -0.129326
+1%              -0.128670
+10%             -0.113400
+25%             -0.091921
+50%             -0.045121
+75%              0.013294
+90%              0.080172
+99%              0.115441
+max              0.118226
+1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,
+0,71,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,0,0,5,0,1,1,4,0,0,1,
+0,0,35,0,1,8,1,0,0,0,1,5,0,0,1,1,0,3,0,0,1,0,0,0,2,1,0,0,0,1,0,0,0,0,0,1,0,0,13,0,0,0,20,0,4,1,1,0,4,0,
+0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1,1,0,17,6,3,0,0,0,0,2,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,4,0,0,1,9,2,3,1,0,0,6,0,
+0,0,8,0,6,89,5,0,0,0,2,3,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,1,1,0,0,0,0,1,0,0,0,0,12,0,2,1,26,1,3,1,0,0,17,0,
+0,0,1,0,3,5,16,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,1,0,0,0,0,5,0,4,0,8,1,4,0,0,0,6,0,
+1,0,0,0,0,0,0,26,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,4,0,2,0,0,1,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,2,1,0,1,0,0,0,
+0,1,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,
+0,0,1,0,0,2,0,0,0,0,6,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,0,0,0,0,0,3,0,
+0,0,5,0,2,3,0,0,0,0,1,29,0,0,1,1,0,2,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,2,0,3,0,0,10,0,2,0,7,0,1,1,0,0,2,0,
+0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,27,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,2,3,0,0,0,0,0,0,0,0,0,0,0,1,0,0,2,0,0,4,0,
+0,1,1,0,0,0,0,0,0,0,0,1,0,0,5,1,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,2,0,0,1,0,0,0,2,0,0,1,0,0,1,0,
+0,0,1,0,0,0,0,0,0,0,0,1,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,1,0,1,1,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,
+0,1,3,0,1,1,0,0,0,0,0,2,0,0,0,0,0,18,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,0,0,3,0,3,0,0,0,1,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0,
+0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,0,0,15,0,0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,23,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,5,0,1,0,0,1,0,0,1,0,0,0,
+0,1,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,25,0,0,0,0,0,0,0,0,0,0,0,0,0,0,14,0,5,0,1,0,0,0,0,1,1,0,
+0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,0,0,79,0,0,1,0,0,0,0,0,0,75,0,0,0,0,0,0,0,3,0,0,0,0,0,0,0,
+0,0,1,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,1,0,0,11,0,1,0,0,0,0,0,0,0,0,0,0,3,0,0,0,2,0,0,0,0,0,1,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,18,0,0,0,0,0,1,1,1,0,0,1,1,0,0,1,0,0,0,1,0,1,0,
+0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,5,0,0,1,0,0,0,0,0,0,5,0,0,0,2,0,2,0,0,0,0,0,
+0,1,1,0,0,0,0,0,0,0,0,1,0,2,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,19,1,0,0,0,0,1,0,1,7,0,0,0,1,0,0,1,0,0,2,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,21,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,
+0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,23,0,0,0,1,0,0,15,0,0,0,0,4,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+1,0,0,0,1,1,1,1,0,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,18,0,0,0,0,4,1,2,0,2,0,1,1,0,0,2,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,0,0,75,0,0,1,0,0,0,0,0,0,75,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,1,0,1,0,0,0,0,0,0,3,0,0,2,1,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,1,0,0,0,40,0,0,9,0,0,0,3,0,1,1,0,0,1,0,
+0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,13,0,0,0,0,0,0,0,0,0,0,0,0,
+1,0,13,0,4,12,5,4,2,1,0,10,0,0,1,1,0,5,0,1,1,0,5,14,0,3,0,1,5,7,0,15,0,4,0,9,0,0,198,1,23,0,22,15,11,2,0,2,3,1,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,1,2,0,0,0,0,0,0,0,0,0,0,
+1,0,0,0,0,2,4,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,1,5,0,0,0,0,0,0,0,0,0,2,0,0,0,0,23,0,52,0,4,5,0,0,0,0,2,0,
+0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,1,0,1,0,0,0,1,0,
+0,5,20,0,9,26,8,0,0,0,4,7,0,1,2,1,0,3,0,0,1,0,0,1,3,2,0,1,2,1,0,0,0,2,0,3,0,0,22,0,4,1,81,1,9,2,3,0,24,0,
+0,0,0,0,2,1,1,1,2,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,4,0,0,0,0,0,0,15,0,5,0,1,30,2,0,0,0,0,0,
+0,1,4,0,3,3,4,0,1,0,0,1,0,0,0,1,0,3,0,1,0,0,0,0,0,0,0,0,2,0,0,0,0,1,0,1,0,0,11,0,0,1,9,2,47,0,1,0,3,0,
+0,1,1,0,1,1,0,0,0,0,0,1,0,2,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,2,0,0,0,2,0,0,8,0,0,1,0,
+0,4,1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3,0,1,0,32,0,3,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,4,0,0,
+0,0,4,0,6,17,6,0,0,0,3,2,0,4,1,0,1,1,0,0,0,0,0,1,0,1,0,1,0,2,1,0,0,2,0,1,0,0,3,0,2,1,24,0,3,1,3,0,35,0,
+0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,4,
