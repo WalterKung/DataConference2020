@@ -136,7 +136,7 @@ class databunch():
         self.min_term_freq=40         
         self.max_term_potion=0.4
         self.min_doc_length=200
-        self.clientVocabWT = 5; 
+        self.clientVocabWT = 3; 
         self.isTf=True
         self.isIDF=True
 
