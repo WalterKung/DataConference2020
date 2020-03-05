@@ -115,7 +115,7 @@ server <- function(input, output, session) {
     })
     
     ##################################################################    
-    # Render Topics items  
+    # Render Document list  
     ##################################################################    
     output$CaS_dataTable <- DT::renderDataTable({
         DT::datatable(
@@ -136,9 +136,8 @@ server <- function(input, output, session) {
     })
     
     ##################################################################    
-    # Render Topics items  
+    # Render Topics list  
     ##################################################################    
-    
     output$CaS_topicTable <- DT::renderDataTable({
         DT::datatable(
             values$topics, 
