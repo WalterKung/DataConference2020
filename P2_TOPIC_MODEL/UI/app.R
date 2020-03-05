@@ -1,17 +1,10 @@
-#
-# This is a Shiny web application. You can run the application by clicking
-#
-#    http://shiny.rstudio.com/
-#
-
 library(shiny)
 library(tidyverse)
 library(DT)
 library(magrittr)
 
-################################################################## 
+
 # Define UI for application 
-################################################################## 
 ui <- fluidPage(
     titlePanel("Topic Modeling"),
     sidebarLayout(
@@ -45,15 +38,18 @@ ui <- fluidPage(
 # values$topics - topic number
 # values$keywords - keywords separated by line feed
 ################################################################## 
+
 server <- function(input, output, session) {
+    
     # support functions
     wordHighlight <- function(SuspWord,colH = 'yellow') {
         colH = values$color
         paste0(' <span style="background-color:',colH,'">',SuspWord,'</span> ')
     }
     
-    myCSV <- reactiveFileReader(1000, session, '../data/texts.csv', read.csv)
-    myTopics <- reactiveFileReader(1000, session, '../data/topics.csv', read.csv)
+    myCSV <- reactiveFileReader(1000, session, 'texts.csv', read.csv)
+    
+    myTopics <- reactiveFileReader(1000, session, 'topics.csv', read.csv)
     
     values <- reactiveValues()
     values$sentence <- ''
@@ -109,7 +105,7 @@ server <- function(input, output, session) {
                     tmp %<>% str_replace_all(regex(paste("[^a-zA-Z<>]",s,"[^a-zA-Z<>]|^",s,"[^a-zA-Z<>]", sep=''), ignore_case = TRUE), wordHighlight)
                 }
                 values$sentence <- tmp
-                updateTextAreaInput(session, "INP_Keywords", value = trimws(values$keywords, whitespace = "[ \t\r\n]"))
+                updateTextAreaInput(session, "INP_Keywords", value = trimws(values$keywords))
             }
         }
     )
@@ -119,7 +115,7 @@ server <- function(input, output, session) {
     })
     
     ##################################################################    
-    # Render List of Documents 
+    # Render Topics items  
     ##################################################################    
     output$CaS_dataTable <- DT::renderDataTable({
         DT::datatable(
@@ -138,10 +134,11 @@ server <- function(input, output, session) {
         )
         
     })
-
+    
     ##################################################################    
     # Render Topics items  
     ##################################################################    
+    
     output$CaS_topicTable <- DT::renderDataTable({
         DT::datatable(
             values$topics, 
@@ -162,6 +159,7 @@ server <- function(input, output, session) {
 
 # Run the application 
 shinyApp(ui = ui, server = server)
+
 
 
 
